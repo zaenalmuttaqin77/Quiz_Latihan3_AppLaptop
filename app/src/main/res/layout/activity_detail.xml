@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    tools:context=".ui.Detail.DetailActivity">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    tools:context=".ui.Detail.DetailActivity">
+
+
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/gambar_laptop"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_nama_laptop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Laptop"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:background="#41131010"
+                android:gravity="center"/>
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_detail_laptop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Resep"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <Button
+        android:id="@+id/btn_psn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
